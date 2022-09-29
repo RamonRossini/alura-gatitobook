@@ -2,8 +2,7 @@
 
 <form class="form mt-4" (ngSubmit)="login()" #formLogin="ngForm">
 
-  <input class="form-control" placeholder="Nome do usuário" [(ngModel)]="usuario" name="usuario"
-    #campoUsuario="ngModel" required />
+  <input class="form-control" placeholder="Nome do usuário" [(ngModel)]="usuario" name="usuario" #campoUsuario="ngModel" required />
   <app-mensagem *ngIf="campoUsuario.invalid && campoUsuario.touched" mensagem="Usuário obrigatório"></app-mensagem>
 
   <input type="password" class="form-control mt-3" placeholder="Senha" [(ngModel)]="senha" name="senha"
